@@ -29,7 +29,7 @@ export default function MainInput() {
       
       <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
       
-               {renderPage()}
+               {renderPage()}         
      
     </div> 
   
