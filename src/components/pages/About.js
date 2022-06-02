@@ -10,10 +10,10 @@ export default function About (){
             </p>
             <div>
                 <h2 className="aboutH2">Projects</h2>
-                <div class="containers">
-                   <div class="card">
-                    <div class="box">
-                     <div class="content">
+                <div className="containers">
+                   <div className="card">
+                    <div className="box">
+                     <div className="content">
                       <h2>01</h2>
                       <h4>Web</h4>
                       <h3><a href="https://phacharapol18.github.io/car-brand-word-games/" target = "_blank">Car-brand-word-games</a></h3>
@@ -23,9 +23,9 @@ export default function About (){
                     </div>
                   </div>
 
-                  <div class="card">
-                   <div class="box">
-                    <div class="content">
+                  <div className="card">
+                   <div className="box">
+                    <div className="content">
                      <h2>02</h2>
                      <h4>Web</h4>
                       <h3><a href="https://phacharapol18.github.io/Day-planer/" target = "_blank">Day planer</a></h3>
@@ -35,9 +35,9 @@ export default function About (){
                    </div>
                   </div>
 
-                  <div class="card">
-                   <div class="box">
-                    <div class="content">
+                  <div className="card">
+                   <div className="box">
+                    <div className="content">
                      <h2>03</h2>
                      <h4>Video Walk Through</h4>
                       <h3><a href="https://drive.google.com/file/d/1qlJ8w0TzwyAbUFb01pvIOsyFIvrOJAn7/view" target = "_blank">SocialNetwork Api</a></h3>
@@ -47,9 +47,9 @@ export default function About (){
                    </div>
                   </div>
 
-                  <div class="card">
-                   <div class="box">
-                    <div class="content">
+                  <div className="card">
+                   <div className="box">
+                    <div className="content">
                      <h2>04</h2>
                      <h4>Web</h4>
                       <h3><a href="https://guarded-harbor-06421.herokuapp.com/" target = "_blank">Sesh</a></h3>
