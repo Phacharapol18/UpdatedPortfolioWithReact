@@ -12,10 +12,10 @@ Updated Portfolio
 - pdfjs-dist
 
 ## Demo
-![image](/screenshotImage/Screenshot1.png)
-![image](/screenshotImage/Screenshot2.png)
-![image](/screenshotImage/Screenshot3.png)
-![image](/screenshotImage/Screenshot4.png)
+![image](./public/screenshotImage/Screenshot1.png)
+![image](./public/screenshotImage/Screenshot2.png)
+![image](./public/screenshotImage/Screenshot3.png)
+![image](./public/screenshotImage/Screenshot4.png)
 
 ## Contact
 
