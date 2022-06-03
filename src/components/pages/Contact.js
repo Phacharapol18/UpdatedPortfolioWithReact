@@ -31,6 +31,7 @@ const handleFormSubmit = e => {
     .then((response) => {
       if(response){
         console.log('SUCCESS!', response.status, response.text);
+        alert('Thank you. Your Message has been send')
         setToSend({
           from_name: '', 
           reply_to: '',
