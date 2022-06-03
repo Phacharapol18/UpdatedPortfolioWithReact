@@ -1,33 +1,47 @@
 import React,{useState} from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { send } from 'emailjs-com';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../style/style.css"
 
 export default function Contact (){
 
-  const [fullName, setFullName] = useState('');
-  const [email, setEmail] = useState('');
-  const [text, setText] = useState('');
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    to_name: 'Phacharapol Phukana', 
+    reply_to: '',
+    message: '',
+   
+  });
   
 
 const handleInputChange = e =>{
   
-  if(e.target.name === 'fullName'){
-    setFullName(e.target.value)
-  } else if (e.target.name === 'email') {
-    setEmail(e.target.value)
-  } else if(e.target.name === 'text') {
-    setText(e.target.value)
-  } 
+  setToSend({ ...toSend, [e.target.name]: e.target.value });
 };
 
 const handleFormSubmit = e => {
   e.preventDefault()
-
-  setFullName('')
-  setEmail('')
-  setText('')
-  alert('Form has submitted')
+  send(
+    'service_y1vm3if',
+   'template_8rcqgdf',
+    toSend,
+    'veT3Pa2iT-uIetRH6'
+  )
+    .then((response) => {
+      if(response){
+        console.log('SUCCESS!', response.status, response.text);
+        setToSend({
+          from_name: '', 
+          reply_to: '',
+          message: '',
+        })
+      }
+      
+    })
+    .catch((err) => {
+      console.log('FAILED...', err);
+    });
 }
 
     const position =[46.20392836265345, -119.24711241440663]
@@ -36,25 +50,39 @@ const handleFormSubmit = e => {
         <h2 className="contacth2">Contact Form</h2>
         <div className="row">
           <form className="col-lg-6 form" onSubmit={handleFormSubmit}>
-             <input value = {fullName}
-             name = "fullName"
-             onChange={handleInputChange}
-             type = "text"
-             placeholder="Full Name" />
-             <br></br>
-             <input value = {email}
-             name = "email"
-             onChange={handleInputChange}
-             type = "email"
-             placeholder="Your Email" />
-              <br></br>
-             <textarea value = {text}
-             name = "text"
-             onChange={handleInputChange}
-             rows="4"
-             cols= "50"
-             placeholder="Your Message">
-            </textarea>
+          <input
+              type='text'
+              name='from_name'
+              placeholder='Your Name'
+              value={toSend.from_name}
+              onChange={handleInputChange}
+            />
+            <br></br>
+            <input
+              type='text'
+              name='to_name'
+              placeholder='to name'
+              value={toSend.to_name}
+              onChange={handleInputChange}
+            />
+            <br></br>
+            <input
+              type='email'
+              name='reply_to'
+              placeholder='Your email'
+              value={toSend.reply_to}
+              onChange={handleInputChange}
+            />
+            <br></br>
+           <textarea
+              type='text'
+              name='message'
+              rows= "4"
+              cols= "25"
+              placeholder='Your message'
+              value={toSend.message}
+              onChange={handleInputChange}
+            />
             <br></br>
             <button className="submitBtn">
               submit
