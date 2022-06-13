@@ -7,7 +7,7 @@ import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 // Worker
 import { Worker } from '@react-pdf-viewer/core'; // install this library
-import resume from "../pdfResume/PHACHARAPOL_PHUKANA2022PDF.PDF"
+import resume from "../pdfResume/PHACHARAPOL_PHUKANA2022resume.pdf"
 import "../style/style.css"
 
 export default function Resume (){
