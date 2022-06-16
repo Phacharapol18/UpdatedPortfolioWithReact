@@ -58,6 +58,18 @@ export default function About (){
                     </div>
                    </div>
                   </div>
+
+                  <div className="card">
+                   <div className="box">
+                    <div className="content">
+                     <h2>05</h2>
+                     <h4>Web</h4>
+                      <h3><a href="https://iykyk-frontend.herokuapp.com/" target = "_blank">IYKYK</a></h3>
+                      <h4>github</h4>
+                      <p><a className="a" href="https://github.com/Phacharapol18/IYKYK" target = "_blank">IYKYK</a></p>
+                    </div>
+                   </div>
+                  </div>
                 </div>
            </div>
         </div>
