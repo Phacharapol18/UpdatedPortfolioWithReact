@@ -10,6 +10,7 @@ import {faEnvelopeSquare} from '@fortawesome/free-solid-svg-icons'
 import {faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons'
 
 
+
 function App() {
   return (
 <BrowserRouter>

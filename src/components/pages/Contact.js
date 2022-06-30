@@ -47,7 +47,7 @@ const handleFormSubmit = e => {
 
     const position =[46.20392836265345, -119.24711241440663]
     return (
-      <div className="container">
+      <div className="container animate__animated animate__fadeInUp">
         <h2 className="contacth2">Contact Form</h2>
         <div className="row">
           <form className="col-lg-6 form" onSubmit={handleFormSubmit}>

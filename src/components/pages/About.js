@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About (){
     return(
-        <div className="aboutDiv">
+        <div className="aboutDiv animate__animated animate__fadeInLeft">
             <h2 className="aboutH2">About Me</h2>
             <p>My full name is long, I goes by Dap. I'm 28 years old with a passion of learning new technology
                 and knowledge. I was an Auto Mechanic for 8 years and decide to change career path. One day I got introduce to

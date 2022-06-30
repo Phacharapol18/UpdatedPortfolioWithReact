@@ -18,9 +18,9 @@ export default function Resume (){
   
     
   return (
-    <div className="container">
-  <h2 className="resume">View Resume</h2>
-    <div className="viewer">
+    <div className="container animate__animated animate__fadeInDown">
+      <h2 className="resume">View Resume</h2>
+       <div className="viewer">
 
       {pdfFile&&(
         <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.12.313/build/pdf.worker.min.js">
